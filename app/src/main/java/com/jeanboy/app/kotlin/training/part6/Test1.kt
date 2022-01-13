@@ -1,6 +1,7 @@
 package com.jeanboy.app.kotlin.training.part6
 
 import java.util.*
+import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType
 
 /**
  * 【1】可空类型
@@ -41,8 +42,10 @@ fun test3(s: String?) {
  * 【5】let 函数
  */
 fun test4(s: String?) {
-    s.let {
+    s?.let {
         // 不为空
+    } ?: run {
+        // 为空
     }
 }
 
@@ -50,3 +53,9 @@ fun test4(s: String?) {
  * 【6】延迟初始化属性 lateinit
  */
 private lateinit var name: String
+
+/**
+ *【7】Any 和 Object
+ */
+val a: Any? = null
+val o: Object = Object()
