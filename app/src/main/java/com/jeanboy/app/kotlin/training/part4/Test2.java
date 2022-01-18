@@ -3,7 +3,7 @@ package com.jeanboy.app.kotlin.training.part4;
 /**
  * Created by jianbo on 2022/1/6 15:37.
  */
-public class Test1 {
+public class Test2 {
     /**
      * 【1】接口
      */
